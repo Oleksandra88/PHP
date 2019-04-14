@@ -71,6 +71,7 @@ if ($rows) {
 while ($row = mysqli_fetch_array ($result)) {
 
      echo '<a href="/teb/phonebookrecord.php?id=' . $row['id'] . '">' .  $row['id'] . '</a><br/>';
+     echo '<a href="/teb/pronebookdelete.php?id=' . $row['id'] . '"> delete' .  $row['id'] . '</a><br/>';
      echo 'name: ' . $row['name'] . '<br>';
  }
  
